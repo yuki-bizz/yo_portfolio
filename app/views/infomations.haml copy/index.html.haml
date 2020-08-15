@@ -1,0 +1,34 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title yuki.bizz portfolio
+    %meta{:content => "yuki oikawa's portfolio suite", :name => "description"}/
+    %link{:href => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg", :rel => "icon", :type => "image/png"}/
+    / CSS
+    %link{:href => "https://unpkg.com/ress/dist/ress.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Philosopher", :rel => "stylesheet"}/
+    %link{:href => "/Users/oikawayuki/projects/yo_portfolio/app/assets/stylesheets/style.css", :rel => "stylesheet"}/
+  %body
+    #home.big-bg
+      %header.page-header.wrapper
+        %h1
+          %a{:href => "index.html.haml"}
+            %img.logo{:alt => "yuki.bizz ホーム", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/yuki_bizz_logo.jpg"}/
+        %nav
+          %ul.main-nav
+            %li
+              %a{:href => "newshtml.haml"} News
+            %li
+              %a{:href => "profile.html.haml"} Profile
+            %li
+              %a{:href => "menu.html.haml"} Menu
+            %li
+              %a{:href => "contact.html.haml"} Contact
+      .home-content.wrapper
+        %h2.page-title Welcome to yuki.bizz page
+        %p yuki.bizzのportfolioへようこそ
+        %a.button{:href => "menu.html.haml"} メニューをみる
+      / /.home-content
+    / /#home

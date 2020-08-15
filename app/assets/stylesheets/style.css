@@ -24,7 +24,7 @@ img {
 
 /* 大きな背景画像
 ------------------------*/
-.big-bg {
+#home.big-bg {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
