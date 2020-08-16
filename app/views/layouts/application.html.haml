@@ -8,6 +8,6 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %meta{content: "yuki oikawa's portfolio suite", :name => "description"}/
-    %link{href: "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg", :rel => "icon", :type => "image/png"}/
+    = favicon_link_tag 'すたばロゴ.jpg', rel: 'icon', type: 'image/png'
   %body
     = yield

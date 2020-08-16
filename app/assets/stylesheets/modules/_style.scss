@@ -26,6 +26,9 @@ img {
   margin: 0 auto;
   padding: 0 4%;
 }
+.logo {
+  width: 100%;
+}
 
 /* 大きな背景画像
 ------------------------*/
@@ -105,7 +108,7 @@ img {
 ------------------------*/
 
 #home {
-  background-image: url(/Users/oikawayuki/projects/yo_portfolio/app/assets/images/壁紙.jpg);
+  background-image: url(壁紙.jpg);
   background-color: lightgray;
   background-blend-mode: soft-light;
   min-height: 100vh;
