@@ -1,15 +1,19 @@
 %header
-  %header.page-header.wrapper
-    %h1
-      %a{href: "index.html"}
-        = image_tag 'yuki_bizz_logo.jpg', class: 'logo'
-    %nav
-      %ul.main-nav
-        %li
-          %a{href: "news.html.haml"} News
-        %li
-          %a{href: "profile.html"} Profile
-        %li
-          %a{href: "menu.html"} Menu
-        %li
-          %a{href: "contact.html"} Contact
+%body
+  #news.big-bg
+    %header.page-header.wrapper
+      %h1
+        %a{href: "infomations#index.html.haml"}
+          = image_tag 'yuki_bizz_logo.jpg', class: 'logo'
+      %nav
+        %ul.main-nav
+          %li
+            -# %a{href: "notice/index.html.haml"} News
+            = link_to 'notices#index.html.haml' do
+              News
+          %li
+            %a{href: "profile.html"} Profile
+          %li
+            %a{href: "menu.html"} Menu
+          %li
+            %a{href: "contact.html"} Contact

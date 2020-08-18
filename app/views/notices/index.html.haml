@@ -27,7 +27,7 @@
 -#             %li
 -#               %a{:href => "contact.html"} Contact
 %header
-  = render partial: "header"
+  = render partial: "infomations/header"
   .wrapper
     %h2.page-title yuki's News
 
@@ -39,7 +39,9 @@
         8/14
         %span 2020
       %p.post-cat カテゴリー：TEST
-    %img{:alt => "店内の様子", :src => "IMG_5911.JPG"}/
+    %img
+      = image_tag 'IMG_5911.JPG'
+    -# %img{:alt => "店内の様子", :src => "app/assets/images/IMG_5911.JPG"}/
     %p
       本文
       本文
@@ -67,7 +69,9 @@
       本文
       本文
   .ad
-    %img{:alt => "新メニュー登場", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg"}/
+    %img
+      = image_tag 'すたばロゴ.jpg'
+    -# %img{:alt => "新メニュー登場", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg"}/
 
 %footer
   .wrapper
