@@ -1,0 +1,80 @@
+-# !!!
+-# %html{:lang => "ja"}
+-#   %head
+-#     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+-#     %meta{:charset => "utf-8"}/
+-#     %title yuki's MENU
+-#     %meta{:content => "yuki oikawa's portfolio suite", :name => "description"}/
+-#     %link{:href => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg", :rel => "icon", :type => "image/png"}/
+-#     / CSS
+-#     %link{:href => "https://unpkg.com/ress/dist/ress.min.css", :rel => "stylesheet"}/
+-#     %link{:href => "https://fonts.googleapis.com/css?family=Philosopher", :rel => "stylesheet"}/
+-#     %link{:href => "/Users/oikawayuki/projects/yo_portfolio/app/assets/stylesheets/style.css", :rel => "stylesheet"}/
+-#   %body
+-#     #menu.big-bg
+-#       %header.page-header.wrapper
+-#         %h1
+-#           %a{:href => "index.html"}
+-#             %img.logo{:alt => "yuki.bizz ホーム", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/yuki_bizz_logo.jpg"}/
+-#         %nav
+-#           %ul.main-nav
+-#             %li
+-#               %a{:href => "newshtml"} News
+-#             %li
+-#               %a{:href => "profile.html"} Profile
+-#             %li
+-#               %a{:href => "menu.html"} Menu
+-#             %li
+-#               %a{:href => "contact.html"} Contact
+
+%header
+  = render partial: "infomations/header"
+#menu  
+  .wrapper
+    %h2.page-title yuki's Menu
+
+  .menu-content.wrapper
+    %h2.page-title Menu
+    %p
+      Comming Soon!!
+  .wrapper.grid
+    .item.big-box
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/special02.jpg"}/
+      = image_tag 'special02.jpg'
+      %p 補完計画
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_S.jpg"}/
+      = image_tag 'soundonly_S.jpg'
+      %p ゼーレ
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_1.jpg"}/
+      = image_tag 'soundonly_1.jpg'
+      %p ゼーレ１
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_2.jpg"}/
+      = image_tag 'soundonly_2.jpg'
+      %p ゼーレ２
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_3.jpg"}/
+      = image_tag 'soundonly_3.jpg'
+      %p ゼーレ３
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_4.jpg"}/
+      = image_tag 'soundonly_4.jpg'
+      %p ゼーレ４
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_5.jpg"}/
+      = image_tag 'soundonly_5.jpg'
+      %p ゼーレ５
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_6.jpg"}/
+      = image_tag 'soundonly_6.jpg'
+      %p ゼーレ６
+    .item
+      -# %img{:alt => "", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/soundonly_7.jpg"}/
+      = image_tag 'soundonly_7.jpg'
+      %p ゼーレ７
+%footer
+  .wrapper
+    %p
+      %small © 2020 yuki.bizz

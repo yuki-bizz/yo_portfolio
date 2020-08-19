@@ -12,8 +12,14 @@
             = link_to 'notices#index.html.haml' do
               News
           %li
-            %a{href: "profile.html"} Profile
+            -# %a{href: "profiles#index.html.haml"} Profile
+            = link_to 'profiles#index.html.haml' do
+              Profile
           %li
-            %a{href: "menu.html"} Menu
+            -# %a{href: "profiles#index.html.haml"} Profile
+            = link_to 'menus#index.html.haml' do
+              Menu
           %li
-            %a{href: "contact.html"} Contact
+            -# %a{href: "contact.html"} Contact
+            = link_to 'contacts#index.html.haml' do
+              Contact

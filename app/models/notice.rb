@@ -1,5 +1,2 @@
-class Notice < ApplicationRecord
-
-  belongs_to :infomation
-  
+class Notice < ApplicationRecord  
 end
