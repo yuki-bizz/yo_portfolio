@@ -1,24 +1,10 @@
-!!!
-%html{:lang => "ja"}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
-    %title yuki.bizz portfolio
-    %meta{:content => "yuki oikawa's portfolio suite", :name => "description"}/
-    / CSS
-    %link{:href => "https://unpkg.com/ress/dist/ress.min.css", :rel => "stylesheet"}/
-    %link{:href => "https://fonts.googleapis.com/css?family=Philosopher", :rel => "stylesheet"}/
-    %link{:href => "css/style.css", :rel => "stylesheet"}/
-  %body
-    %header.page-header
-      %h1
-        %a{:href => "index.html"}
-          %img.logo{:alt => "yuki.bizz ホーム", :src => "images/yuki_bizz_logo.PNG"}/
-      %nav
-        %ul.main-nav
-          %li
-            %a{:href => "profile.html"} Profile
-          %li
-            %a{:href => "menu.html"} Menu
-          %li
-            %a{:href => "contact.html"} Contact
+%body
+  #home.big-bg
+    .header
+      = render partial: "header"
+
+    .home-content.wrapper
+      %h2.page-title Welcome to yuki.bizz page
+      %p yuki.bizzのportfolioへようこそ
+      %a.button{href: "menus#index.html.haml"} メニューをみる
+

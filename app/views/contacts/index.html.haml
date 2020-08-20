@@ -1,0 +1,81 @@
+-# !!!
+-# %html{:lang => "ja"}
+-#   %head
+-#     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+-#     %meta{:charset => "utf-8"}/
+-#     %title Contact to yuki
+-#     %meta{:content => "yuki oikawa's portfolio suite", :name => "description"}/
+-#     %link{:href => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg", :rel => "icon", :type => "image/png"}/
+-#     / CSS
+-#     %link{:href => "https://unpkg.com/ress/dist/ress.min.css", :rel => "stylesheet"}/
+-#     %link{:href => "https://fonts.googleapis.com/css?family=Philosopher", :rel => "stylesheet"}/
+-#     %link{:href => "/Users/oikawayuki/projects/yo_portfolio/app/assets/stylesheets/style.css", :rel => "stylesheet"}/
+-#   %body
+-#     #contact.big-bg
+-#       %header.page-header.wrapper
+-#         %h1
+-#           %a{:href => "index.html"}
+-#             %img.logo{:alt => "yuki.bizz ホーム", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/yuki_bizz_logo.jpg"}/
+-#         %nav
+-#           %ul.main-nav
+-#             %li
+-#               %a{:href => "newshtml"} News
+-#             %li
+-#               %a{:href => "profile.html"} Profile
+-#             %li
+-#               %a{:href => "menu.html"} Menu
+-#             %li
+-#               %a{:href => "contact.html"} Contact
+%header
+  = render partial: "infomations/header"
+
+#contact
+  .wrapper
+    %h2.page-title Contact to yuki
+    
+    %form{:action => "#"}
+      %div
+        %label{:for => "name"} 名前
+        %input#name{:name => "your-name", :type => "text"}/
+      %div
+        %label{:for => "email"} メールアドレス
+        %input#email{:name => "your-email", :type => "email"}/
+      %div
+        %label{:for => "message"} メッセージ
+        %textarea#message{:name => "message"}
+      %input.button{:type => "submit", :value => "送信"}/
+
+%section#location
+  .wrapper
+    .location-info
+      %h3.sub-title 小岩井の一本桜
+      %p
+        住所：岩手県雫石町丸谷地
+        %br/
+        36-1  小岩井農場内
+        %br/
+        電話：019-692-4321
+        %br/
+        営業時間：00:00〜00:00
+        %br/
+        休日：なし
+        %br/
+    .location-map
+      %iframe{:allowfullscreen => "", "aria-hidden" => "false", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12269.08677049139!2d141.0040106!3d39.7560079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfed464a1733f5f48!2z5bCP5bKp5LqV6L6y5aC044Gu5LiA5pys5qGc!5e0!3m2!1sja!2sjp!4v1597407874430!5m2!1sja!2sjp", :style => "border:0;", :tabindex => "0", :width => "600"}
+
+%section#SNS
+  .wrapper
+    .sns-box
+      %h3.sub-title BLOG
+      %iframe{:allow => "encrypted-media", :allowtransparency => "true", :frameborder => "0", :height => "315", :scrolling => "no", :src => "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fyuki.oikawa.507&tabs=timeline&width=0&height=315&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId", :style => "border:none;overflow:hidden", :width => "0"}
+    .sns-box
+      %h3.sub-title Twitter
+      %a.twitter-timeline{"data-height" => "315", :href => "https://twitter.com/yuki_bizz?ref_src=twsrc%5Etfw"} Tweets by yuki_bizz
+      %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}
+    .sns-box
+      %h3.sub-title YouTube
+      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/lbtgbo2us-E", :width => "560"}
+%footer
+  .wrapper
+    %p
+      %small © 2020 yuki.bizz
