@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  endoding: unicode
+  pool: 5
   database: yo_portfolio_production
   username: yo_portfolio
   password: <%= ENV['YO_PORTFOLIO_DATABASE_PASSWORD'] %>
