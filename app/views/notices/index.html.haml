@@ -26,52 +26,53 @@
 -#               %a{:href => "menu.html"} Menu
 -#             %li
 -#               %a{:href => "contact.html"} Contact
-%header
-  = render partial: "infomations/header"
-  .wrapper
-    %h2.page-title yuki's News
+#home.big-bg
+  %header
+    = render partial: "infomations/header"
+    .wrapper
+      %h2.page-title yuki's News
 
-.news-contents.wrapper
-  %article
-    %header.post-info
-      %h2.post-title テストPost１
-      %p.post-date
-        8/14
-        %span 2020
-      %p.post-cat カテゴリー：TEST
-    %img
-      = image_tag 'IMG_5911.JPG'
-    -# %img{:alt => "店内の様子", :src => "app/assets/images/IMG_5911.JPG"}/
-    %p
-      本文
-      本文
-      本文
-      本文
-    %p
-      本文
-      本文
-      本文
-      本文
-    %p 本文
-  %aside
-    %h3.sub-title カテゴリー
-    %ul.sub-menu
-      %li
-        %a{:href => "#"} お店の紹介
-      %li
-        %a{:href => "#"} 期間限定メニュー
-      %li
-        %a{:href => "#"} イベント
-      %li
-        %a{:href => "#"} お客様との会話
-    %h3.sub-title この店について
-    %p
-      本文
-      本文
-  .ad
-    %img
-      = image_tag 'すたばロゴ.jpg'
-    -# %img{:alt => "新メニュー登場", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg"}/
+  .news-contents.wrapper
+    %article
+      %header.post-info
+        %h2.post-title テストPost１
+        %p.post-date
+          8/14
+          %span 2020
+        %p.post-cat カテゴリー：TEST
+      %img
+        = image_tag 'IMG_5911.JPG'
+      -# %img{:alt => "店内の様子", :src => "app/assets/images/IMG_5911.JPG"}/
+      %p
+        本文
+        本文
+        本文
+        本文
+      %p
+        本文
+        本文
+        本文
+        本文
+      %p 本文
+    %aside
+      %h3.sub-title カテゴリー
+      %ul.sub-menu
+        %li
+          %a{:href => "#"} お店の紹介
+        %li
+          %a{:href => "#"} 期間限定メニュー
+        %li
+          %a{:href => "#"} イベント
+        %li
+          %a{:href => "#"} お客様との会話
+      %h3.sub-title この店について
+      %p
+        本文
+        本文
+    .ad
+      %img
+        = image_tag 'すたばロゴ.jpg'
+      -# %img{:alt => "新メニュー登場", :src => "/Users/oikawayuki/projects/yo_portfolio/app/assets/images/すたばロゴ.jpg"}/
 
 %footer
   .wrapper
